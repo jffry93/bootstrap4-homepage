@@ -78,6 +78,10 @@ body {
 
 /*--Hamburger icon in navbar--*/
 
+.navbar-toggler button {
+    border-radius: 0rem!important;
+}
+
 .navbar-toggler-icon {
     height: 1em;
     width: 1em;
@@ -88,10 +92,6 @@ body {
 
 #carousel {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-.carousel-inner {
-    max-height: 40rem!important;
 }
 
 
@@ -186,7 +186,7 @@ body {
 
 .fixed {
     position: fixed;
-    background-image: url('shoe1.88b6cc0a.png');
+    background-image: url('../img/carousel/shoe1.png');
 }
 
 .fixed-background {
@@ -271,17 +271,6 @@ footer .svg-inline--fa:hover {
 
 /* Devices over 1650px (xl) */
 
-@media (min-width: 1649.98px) {
-    .carousel-inner {
-        max-height: 50rem!important;
-        min-width: 100%;
-    }
-    .carousel-item img {
-        position: relative;
-        top: -150px;
-    }
-}
-
 
 /* Devices under 1199px (xl) */
 
@@ -306,6 +295,28 @@ footer .svg-inline--fa:hover {
     }
     .btn-lg {
         font-size: .95rem;
+    }
+}
+
+
+/* Devices under 420px (md) */
+
+@media (max-width: 450px) {
+    .top-bar a {
+        font-size: 1rem;
+    }
+    .carousel-inner {
+        min-height: 500px;
+    }
+    .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+    }
+    .first-header h1 {
+        font-size: 2.5rem;
+    }
+    .first-header div {
+        width: 80%!important;
     }
 }
 
@@ -376,6 +387,3 @@ Extra (xl) large devices (large desktops, 1200px and up)
     transform: translateZ(0);
     will-change: transform;
 }
-
-
-/*# sourceMappingURL=/style.78032849.css.map */
