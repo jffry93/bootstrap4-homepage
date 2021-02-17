@@ -186,7 +186,7 @@ body {
 
 .fixed {
     position: fixed;
-    background-image: url('../img/carousel/shoe1.png');
+    background-image: url('../img/emoji/drop10.png');
 }
 
 .fixed-background {
@@ -304,6 +304,9 @@ footer .svg-inline--fa:hover {
 @media (max-width: 450px) {
     .top-bar a {
         font-size: 1rem;
+    }
+    .navbar .fa-hamburger {
+        font-size: 2rem;
     }
     .carousel-inner {
         min-height: 500px;
